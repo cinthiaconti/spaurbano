@@ -1,0 +1,697 @@
+/*
+
+Theme Name: ContiSpa
+Theme URI: http://www.contisaude.com.br/spaurbano
+Description: Template da Contisaude Spa Urbano
+Author: Cinthia Conti
+Version: 1.0
+
+*/
+
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.left{float: left}
+.right{float: right;}
+.clear{clear: both;}
+.none{display:none;}
+
+.success{background-color: #5F68AC;}
+.error{background-color: #B86853;}
+
+.success, .error{
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 5px 30px;
+    padding: 2px;
+}
+
+.addthis{
+    float:right;
+    margin-bottom: 10px;
+}
+
+.cqcounter{
+    margin: 5px auto;
+    text-align: right;
+    width: 760px;
+}
+
+.quadradinhos{
+    font-size:14px;
+    padding-right:4px;
+    padding-bottom: 2px;
+    line-height: 23px;
+    float:left;
+}
+
+.laranja{color:#C63E01;}
+.marrom{color:#2F0908;}
+.bege{color:#BE8722;}
+
+body{
+    color: #000;
+    text-align:center;
+    font-family: arial;
+    font-size: 12px;
+    padding-top: 10px;
+
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFA9A08D', EndColorStr='#FFFFFFFF');
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A9A08D), to(#A9A08D), color-stop(.5,#FFFFFF));
+    background: -moz-linear-gradient(top, #A9A08D 0%, #FFFFFF 50%, #A9A08D 100%);
+
+    background-attachment:fixed;
+}
+
+p{
+	text-align: left;
+    margin-bottom: 10px;
+}
+
+a, a:link, a:visited{
+    font-weight: bold;
+    color: #5C832F;
+}
+
+input{
+    border: 0;
+}
+
+h2{
+    background-color: transparent;
+    padding: 0 4px 5px;
+    color: #fff;
+    font-weight: normal;
+    font-family: Cambria;
+    line-height: 20px;
+    height: 20px;
+    font-size: 23px;
+    margin-bottom: 2px;
+}
+
+.topo .logo{
+text-align: center;
+    float: left;
+    width: 180px;
+    height: 175px;
+}
+
+.topo .logo img{
+    border: 0;
+}
+
+.topo h1{
+    color: #280809;
+    font-size: 18px;
+}
+
+.topo a{
+    text-decoration: none;
+}
+
+.topo .titulo{
+    display: block;
+    color: #A83108;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.conteudo{
+	text-align: left;
+    width: 750px;
+    background:#B2A589;
+    margin: 0 auto;
+    padding: 10px 7px;
+    color: #000;
+    -moz-box-shadow: 0 0 10px #B2A589;
+    -webkit-box-shadow: 0 0 10px #B2A589;
+    box-shadow: 0 0 10px #B2A589;
+}
+
+.texto{
+text-align: left;
+    line-height: 20px;
+    padding: 10px;
+    background-color: #EADBB9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url('http://www.contisaude.com.br/spaurbano/wp-content/themes/contispa/border-radius.htc');
+}
+
+
+.empresa, .posts, .comentarios, .base, .lateral, .local, .page{
+    position: relative;
+    z-index: 0;
+    zoom: 1; /* For IE6 */
+}
+
+.posts, .local, .comentarios, .rodape, .singlewp, .empresa, .blogwp .principal{
+	text-align: center;
+    background-color: #D8CAA8;
+    padding: 5px;
+    margin: 10px 0;
+
+    -moz-box-shadow: 0 0 5px #423e31;
+    -webkit-box-shadow: 0 0 5px #423e31;
+    box-shadow: 0 0 5px #423e31;
+}
+
+.slideshow{
+    margin:0;
+    padding: 0;
+    line-height:12px;
+    background-color: #B2A589;
+}
+
+.empresa{
+    margin:0;
+}
+
+.posts h2, .local h2, .comentarios h2, .empresa h2, .blogwp h3, .singlewp h3{
+    background: #92A080;
+    padding: 2px 4px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.slideshow h2{
+    font-family:Arial;
+    font-size: 10px;
+}
+
+.fotos{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.fotos .fotostexto{
+    color: #92A080;
+    padding: 2px 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.coluna{
+    float:left;
+    width:390px;
+}
+
+.empresa .texto{
+    text-align: center;
+}
+
+.empresa .frase{
+    text-align: center;
+    font-style: italic;
+}
+
+.comentarios li{
+    list-style: none;
+}
+
+.local h3, .comentarios h3{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.comentarios .texto{
+    clear: both;
+    text-indent: 0;
+text-align: left;
+}
+
+.comentarios .nome{
+    font-weight: bold;
+    color: #5C832F;
+}
+
+.lateral{
+    width: 352px;
+    float:right;
+}
+
+.newsletter{
+    height:100px;
+}
+
+.newsletter, .blogwp .lista{
+    background-color: #92A080;
+    padding: 10px 6px;
+    margin: 10px 0;
+
+    -moz-box-shadow: 0 0 5px #423e31;
+    -webkit-box-shadow: 0 0 5px #423e31;
+    box-shadow: 0 0 5px #423e31;
+}
+
+.newsletter h2, .blogwp .lista .titulo{
+    color: #fff;
+    text-align: center;
+    font-weight:bold;
+    margin: 0;
+    margin-top: 6px;
+    font-family: Arial;
+    font-size: 22px;
+
+}
+
+.newsletter h3{
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 7px;
+text-align:center;
+}
+
+.local{
+    margin-top: 0;
+}
+
+.base{
+    margin-top: 10px;
+    height: 75px;
+    text-align: center;
+}
+
+.base h3{
+    font-family: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.base div{
+    float:left;
+    padding: 10px 6px;
+    height: 55px;
+    margin: 0 6px 0 5px;
+    background-color: #92A080;
+    -moz-box-shadow: inset 0 0 5px #423e31;
+    -webkit-box-shadow: inset 0 0 5px #423e31;
+    box-shadow: inset 0 0 5px #423e31;
+
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url('http://www.contisaude.com.br/spaurbano/wp-content/themes/contispa/border-radius.htc');
+}
+
+.ie .base div{
+	margin-right: 4px;
+}
+
+.base div:first-child{
+    margin-left: 0px;
+}
+
+.base div:last-child{
+    margin-right: 0;
+}
+
+.base img{
+    border: 0;
+}
+
+.rodape{
+    clear:both;
+    font-size: 11px;
+    text-align: center;
+    background-color: #D8CAA8;
+    margin: 10px 0;
+    margin-bottom: 0;
+}
+
+
+.rodape img{
+    vertical-align: middle;
+}
+
+.home .principal{
+    margin-top: 5px;
+    clear:both;
+}
+
+/*MENU*/
+
+.menu {
+    position:relative;
+    width:560px;
+    height:166px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    height: 166px;
+    width:790px;
+    position: relative;
+}
+
+.menu ul li {
+    float: left;
+    width: 79.5px;
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.menu ul li a {
+    cursor:pointer;
+    display:block;
+    overflow: hidden;
+    height: 166px;
+    border-right: 2px solid #938870;
+}
+
+
+.menu ul li#home a {background: url(images/menu/home.jpg) repeat scroll 0%;}
+.menu ul li#quemsomos a {background: url(images/menu/quemsomos.jpg) repeat scroll 0%;}
+.menu ul li#estetica a {background: url(images/menu/estetica.jpg) repeat scroll 0%;}
+.menu ul li#spa a {background: url(images/menu/spa.jpg) repeat scroll 0%;}
+.menu ul li#blogwp a {background: url(images/menu/blog.jpg) repeat scroll 0%;}
+.menu ul li#fotos a {background: url(images/menu/fotos.jpg) repeat scroll 0%;}
+.menu ul li#contato a {background: url(images/menu/contato.jpg) repeat scroll 0%;}
+.menu ul li#comochegar a {background: url(images/menu/comochegar.jpg) repeat scroll 0%;border-right: 0;}
+
+
+.home .menu ul li#home a,
+.page-id-187 .menu ul li#quemsomos a,
+.page-id-18 .menu ul li#estetica a,
+.page-id-20 .menu ul li#spa a,
+.page-id-22 .menu ul li#blogwp a,
+.page-id-14 .menu ul li#contato a,
+.page-id-16 .menu ul li#comochegar a{
+    min-width:240px;
+}
+
+
+.menu ul li a:hover{
+    background-color: #fff;
+    opacity:0.85;
+    -moz-opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+
+/****************************************************/
+
+
+/*TEMPLATE SINGLE*/
+
+.singlewp{
+    clear:both;
+    margin-top: 0;
+}
+
+.singlewp .texto{
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.singlewp .data, .blogwp .data{
+	padding: 5px 0;
+}
+
+.singlewp ul, .singlewp ol{
+    text-indent: 0;
+	margin-left:30px;
+}
+
+.singlewp .navigation{
+    margin-bottom: 10px;
+}
+
+/****************************************************/
+
+
+/*TEMPLATE blogwp*/
+
+.blogwp{
+    clear:both;
+    height: 100%;
+}
+
+.blogwp ul, .blogwp ol{
+    text-indent: 0px;
+	margin-left: 30px;
+}
+
+.blogwp .lista{
+    float: right;
+    width: 150px;
+    margin-top: 0;
+}
+
+.blogwp .lista ul{
+    padding: 10px;
+    text-indent: 0;
+margin-left:0;
+
+    list-style: none;
+    text-align: left;
+}
+
+.blogwp .lista li{
+    margin-bottom: 10px;
+}
+
+.blogwp .lista .titulo{
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.blogwp .lista a{
+    color: #fff;
+}
+
+.fotos .fotostexto{
+    color: #92A080;
+    padding: 2px 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blogwp h3 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.blogwp .principal{
+    margin-top: 0;
+    width: 570px;
+}
+
+.blogwp .texto ul{
+    margin-left: 20px;
+    text-indent: 0;
+}
+
+/****************************************************/
+
+
+/*INTERNA*/
+
+/* CSS Document */
+
+
+.interna{
+    background-color: #D8CAA8;
+    padding: 5px;
+
+    -moz-box-shadow: 0 0 5px #423e31;
+    -webkit-box-shadow: 0 0 5px #423e31;
+    box-shadow: 0 0 5px #423e31;
+}
+
+ul.menu2{
+    background: #687C5F;
+    list-style: none;
+    width: 400px;
+}
+
+ul.menu2 li{
+    cursor: pointer;
+    float: left;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: 2px;
+    color: #777;
+}
+
+ul.menu2 li.active{
+    color: #fff;
+    border: 1px solid #a9a08d;
+    border-bottom: 1px solid #B6AB94;
+    z-index: 1;
+    margin-bottom: -1px;
+}
+
+.caixa{
+    padding: 10px;
+    border: 1px solid #a9a08d;
+    border-width: 1px 0 0 0;
+}
+
+.caixa p{
+    text-align: left;
+}
+
+.caixa, ul.menu2 li.active{
+    background-color: #B6AB94;
+}
+
+.detalhes, ul.itens .active{
+    background: #EADBB9;
+}
+
+.detalhes{
+    margin-top:2px;
+    padding: 10px 10px 10px 20px;
+    width:530px;
+}
+
+
+.imagem{
+    border: 3px solid #a9a08d;
+    text-align: center;
+    margin: 5px 0 0 10px;
+    float: right;
+}
+
+ul.itens{
+    list-style:none;
+    height:330px;
+    width:100%;
+}
+
+ul.itens li{
+    cursor: pointer;
+    text-indent:5px;
+    padding:5px;
+    text-align:left;
+    font-size:12px;
+    color: #fff;
+}
+
+ul.itens .active{
+    font-weight:bold;
+    color: #C63E01;
+}
+
+
+.pagewp .principal{
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #D8CAA8;
+
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+}
+
+.pagewp ul{
+    margin-left: 40px;
+    text-indent: 0;
+}
+
+.newsletterTextInput{
+    width: 210px;
+}
+
+#default p{
+    text-indent: 0;
+}
+
+/*FORMULARIO */
+
+
+.wpcf7-form{
+    width: 350px;
+}
+
+div.wpcf7 {
+    margin: 0;
+    padding: 0;
+}
+
+div.wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+    border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+    border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+    border: 2px solid #f7e700;
+}
+
+span.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #ff0000;
+    font-size: 10pt;
+    width: 280px;
+    padding: 2px;
+}
+
+span.wpcf7-not-valid-tip-no-ajax {
+    color: #f00;
+    font-size: 10pt;
+    display: block;
+}
+
+span.wpcf7-list-item {
+    margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+    display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+    border: none;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+div.wpcf7 .watermark {
+    color: #888;
+}
+
+.rel {
+    position: relative;
+    z-index: 0;
+    zoom: 1; /* For IE6 */
+
+}
+
+li.comment {
+	list-style: none;
+}
